@@ -74,19 +74,38 @@
   font-weight: bold;
 }
 
+.testimonials {
+  padding: 40px 0;
+}
 
 .testimonialBox {
   background-color: #f9f9f9;
   border-radius: 12px;
-  height: 20vh;
+  min-height: 100%;
+  padding: 25px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .testimonialText {
   font-style: italic;
   font-size: 1.1rem;
   color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.carousel-indicators button {
+  background-color: #008080;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
 
 /* ===================== RESPONSIVE ===================== */
 
@@ -130,8 +149,7 @@
     font-size: 1rem;
   }
 
-  .cardText,
-  .testimonialText {
+  .cardText {
     font-size: 0.95rem;
   }
 
@@ -154,6 +172,16 @@
   .serviceCard {
     max-width: 100%;
   }
+
+  /* Testimonial specific mobile styles */
+  .testimonialBox {
+    padding: 20px;
+    margin: 5px 0;
+  }
+
+  .testimonialText {
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -169,22 +197,34 @@
     font-size: 0.95rem;
   }
 
-  .cardText,
-  .testimonialText {
+  .cardText {
     font-size: 0.9rem;
   }
 
-  
   .specializations .specItem {
     font-size: 0.9rem;
-    
-  }
-
-  .testimonialBox {
-    padding: 1rem;
   }
 
   .infoIcon {
     font-size: 1.8rem;
+  }
+
+  /* Testimonial specific mobile styles */
+  .testimonialBox {
+    padding: 15px;
+    margin: 0;
+  }
+
+  .testimonialText {
+    font-size: 0.9rem;
+  }
+
+  .carousel-indicators {
+    bottom: -30px;
+  }
+
+  .carousel-indicators button {
+    width: 8px;
+    height: 8px;
   }
 }
