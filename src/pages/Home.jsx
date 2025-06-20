@@ -61,7 +61,7 @@ const Home = () => {
               <img src={founder} alt="Manager Profile" className={styles.managerProfileImg} />
             </div>
             <div className={styles.managerContent}>
-              <h2 className={styles.managerName}>Mr. Rakesh Verma</h2>
+              <h2 className={styles.managerName}>Mr.Muhammed Hassan S (Founder&CEO)</h2>
               <p className={styles.managerBio}>
                 With over 15 years in the digital transformation space, Mr. Rakesh Verma has been the driving force behind Lazeno's success. His unwavering focus on innovation and client-centric strategies has helped countless businesses scale efficiently in a fast-changing digital world.
               </p>
