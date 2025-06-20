@@ -43,7 +43,7 @@ const Footer = () => {
                 <FaEnvelope className={styles.footerIcon} /> lazenocons01@gmail.com
               </a>
             </p>
-            <p><FaClock className={styles.footerIcon} /> Mon - Fri: 6 AM - 10 PM</p>
+            <p><FaClock className={styles.footerIcon} /> All Days: 6 AM - 10 PM</p>
           </div>
 
           <div className="col-md-4">
