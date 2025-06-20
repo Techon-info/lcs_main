@@ -36,14 +36,14 @@ const Footer = () => {
 
           <div className="col-md-3 mb-4 mb-md-0">
             <h6 className={styles.footerSubtitle}>Contact Info</h6>
-            <p><FaMapMarkerAlt className={styles.footerIcon} /> 123, Digital Park, Tech City, India</p>
-            <p><FaPhoneAlt className={styles.footerIcon} /> +91 98765 43210</p>
+            <p><FaMapMarkerAlt className={styles.footerIcon} /> 151 A, SIFA TOWER, Karupparayan Kovil, Kurichi, Podanur, Coimbatore.</p>
+            <p><FaPhoneAlt className={styles.footerIcon} /> +91 7604889478</p>
             <p>
               <a href="mailto:lazenocons01@gmail.com" style={{ color: "white" }}>
                 <FaEnvelope className={styles.footerIcon} /> lazenocons01@gmail.com
               </a>
             </p>
-            <p><FaClock className={styles.footerIcon} /> Mon - Fri: 9 AM - 6 PM</p>
+            <p><FaClock className={styles.footerIcon} /> Mon - Fri: 6 AM - 10 PM</p>
           </div>
 
           <div className="col-md-4">
