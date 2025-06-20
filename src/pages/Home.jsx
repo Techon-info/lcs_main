@@ -53,29 +53,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        {/* Manager Section */}
-        <div className={styles.managerDetailsSection}>
-          <div className={styles.managerGrid}>
-            <div className={styles.managerImageWrapper}>
-              <img src={founder} alt="Manager Profile" className={styles.managerProfileImg} />
-            </div>
-            <div className={styles.managerContent}>
-              <h2 className={styles.managerName}>Mr.Muhammed Hassan S (Founder&CEO)</h2>
-              <p className={styles.managerBio}>
-                With over 15 years in the digital transformation space, Mr. Rakesh Verma has been the driving force behind Lazeno's success. His unwavering focus on innovation and client-centric strategies has helped countless businesses scale efficiently in a fast-changing digital world.
-              </p>
-              <p className={styles.managerHistory}>
-                Starting his journey as a freelance marketer, he quickly gained reputation for delivering measurable results. In 2014, he founded Lazeno Consultancy Services with a mission to empower brands with meaningful digital presence.
-              </p>
-              <p className={styles.managerVision}>
-                "Leadership is about building a legacy, not just profits. At Lazeno, we lead with empathy, evolve with strategy, and deliver with excellence."
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Innovation Section */}
+        
+         {/* Innovation Section */}
         <div className={styles.innovationHighlights}>
           <h2 className={styles.sectionHeading}>From Vision to Innovation</h2>
           <p className={styles.sectionSubtext}>
@@ -107,6 +86,26 @@ const Home = () => {
             </div>
           </div>
         </div>
+        
+        {/* Manager Section */}
+        <div className={styles.managerDetailsSection}>
+          <div className={styles.managerGrid}>
+            <div className={styles.managerImageWrapper}>
+              <img src={founder} alt="Manager Profile" className={styles.managerProfileImg} />
+            </div>
+            <div className={styles.managerContent}>
+              <h2 className={styles.managerName}>Mr.Muhammed Hassan S (Founder&CEO)</h2>
+              <p className={styles.managerBio}>
+                 At Lazeno Consultancy Services, we assure you of expert consulting and digital marketing solutions tailored to your unique needs. With years of experience and a proven track record, our team is dedicated to delivering results-driven strategies that drive real growth. We prioritize transparency, communication, and measurable results. Our team stays up-to-date with the latest trends and technologies to ensure cutting-edge solutions. Trust us to empower your business with innovative and effective digital marketing strategies.
+              </p>
+              <p className={styles.managerVision}>
+                "Leadership is about building a legacy, not just profits. At Lazeno, we lead with empathy, evolve with strategy, and deliver with excellence."
+              </p>
+            </div>
+          </div>
+        </div>
+
+       
       </div>
       <Footer />
     </>
