@@ -130,36 +130,31 @@ const About = () => {
 </div>
 
 
-        <div className={`text-center mt-5 container ${styles.testimonials}`}>
-          <h3 className={`mb-4 ${styles.sectionTitle}`}>What Our Clients Say</h3>
-          <Carousel interval={4000}>
-            {testimonialChunks.map((group, idx) => (
-              <Carousel.Item key={idx}>
-                <div className="row">
-                  {group.map((item, i) => (
-                    <div className="col-md-6 d-flex" key={i}>
-                      <div className={`p-4 text-start w-100 ${styles.testimonialBox}`}>
-                        <div className="d-flex align-items-start">
-                          {/* <img
-                            src={item.image}
-                            alt={item.name}
-                            className="img-fluid rounded shadow me-3"
-                            style={{ maxWidth: "120px", maxHeight: "120px", objectFit: "cover" }}
-                          /> */}
-                          <div>
-                            <FaQuoteLeft className="text-success mb-2" size={24} />
-                            <p className={styles.testimonialText}>{item.feedback}</p>
-                            <p className="fw-bold mb-0">- {item.name}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+    <div className={`text-center mt-5 container ${styles.testimonials}`}>
+  <h3 className={`mb-4 ${styles.sectionTitle}`}>What Our Clients Say</h3>
+  <Carousel interval={4000} indicators={true}>
+    {testimonialChunks.map((group, idx) => (
+      <Carousel.Item key={idx}>
+        <div className="row justify-content-center">
+          {group.map((item, i) => (
+            <div className="col-lg-6 col-12 d-flex mb-3 mb-lg-0" key={i}>
+              <div className={`p-4 text-start w-100 ${styles.testimonialBox}`}>
+                <div className="d-flex align-items-start">
+                  <div>
+                    <FaQuoteLeft className="text-success mb-2" size={24} />
+                    <p className={styles.testimonialText}>{item.feedback}</p>
+                    <p className="fw-bold mb-0">- {item.name}</p>
+                  </div>
                 </div>
-              </Carousel.Item>
-            ))}
-          </Carousel>
+              </div>
+            </div>
+          ))}
         </div>
+      </Carousel.Item>
+    ))}
+  </Carousel>
+</div>
+                     
       </div>
       
       <Footer />
