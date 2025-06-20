@@ -1,0 +1,190 @@
+.about {
+  margin-top: 10vh;
+  padding-top: 40px;
+}
+
+.aboutHeading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #008080;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+}
+
+.serviceCard {
+  background-color: #fff;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
+  height: 100%;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.iconBox {
+  font-size: 2.5rem;
+  color: #008080;
+}
+
+.cardTitle {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #343a40;
+}
+
+.cardText {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.infoBox {
+  background-color: #fff;
+  border-radius: 12px;
+  min-height: 180px;
+  border: 1px solid #ccc;
+}
+
+.infoIcon {
+  font-size: 2.5rem;
+  color: teal;
+}
+
+.specializations .specItem {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.specializations .specItem::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #008080;
+  font-weight: bold;
+}
+
+
+.testimonialBox {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  height: 20vh;
+}
+
+.testimonialText {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 1024px) {
+  .aboutHeading {
+    font-size: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.9rem;
+  }
+
+  .cardTitle {
+    font-size: 1.15rem;
+  }
+
+  .cardText,
+  .testimonialText {
+    font-size: 1rem;
+  }
+
+  .specializations .specItem {
+    font-size: 1rem;
+  }
+
+  .infoBox {
+    min-height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutHeading {
+    font-size: 1.8rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+
+  .cardTitle {
+    font-size: 1rem;
+  }
+
+  .cardText,
+  .testimonialText {
+    font-size: 0.95rem;
+  }
+
+  .specializations .specItem {
+    font-size: 0.95rem;
+  }
+
+  .iconBox {
+    font-size: 2.2rem;
+  }
+
+  .infoIcon {
+    font-size: 2rem;
+  }
+
+  .infoBox {
+    min-height: 140px;
+  }
+
+  .serviceCard {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutHeading {
+    font-size: 1.6rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.4rem;
+  }
+
+  .cardTitle {
+    font-size: 0.95rem;
+  }
+
+  .cardText,
+  .testimonialText {
+    font-size: 0.9rem;
+  }
+
+  
+  .specializations .specItem {
+    font-size: 0.9rem;
+    
+  }
+
+  .testimonialBox {
+    padding: 1rem;
+  }
+
+  .infoIcon {
+    font-size: 1.8rem;
+  }
+}

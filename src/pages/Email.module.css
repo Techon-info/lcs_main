@@ -1,0 +1,352 @@
+/* Main Container */
+.email-marketing-container {
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 10vh;
+  padding: 2rem;
+  background: #fdfdfd;
+  color: #222;
+}
+
+/* === Hero Section === */
+.email-hero {
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-hero-content {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.email-hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.email-hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #008080;
+  text-align: center;
+}
+
+.email-hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.email-btn {
+  background-color: teal;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.email-btn:hover {
+  background-color: rgb(220, 200, 72);
+  color: black;
+}
+
+.email-hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-hero-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* === Services Section === */
+.email-services {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.email-services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.service-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.service-card {
+  background-color: #f5f7fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  color: #008080;
+}
+
+/* === Benefits Section === */
+.email-benefits {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.email-benefits h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+/* === Tools Section === */
+.email-tools {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.email-tools h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.tools-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tool {
+  background-color: #eef3fb;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* === Process Section === */
+.email-process {
+  padding: 3rem 0;
+  background: white;
+  border-radius: 5px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.process-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #0c457d;
+  font-weight: 700;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.col-md-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.timeline-step {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  height: 100%;
+}
+
+.step-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+/* === Testimonials Section === */
+.email-testimonials {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.testimonial-cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.testimonial {
+  background-color: #fff9f0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 5px solid #fba71b;
+  font-style: italic;
+}
+
+/* === Call to Action === */
+.email-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.btn9 {
+  background-color: #008080;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn9:hover {
+  background-color: rgb(220, 200, 72);
+  color: black;
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+  .email-hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .email-hero-image {
+    order: 2;
+    margin-top: 20px;
+  }
+
+  .email-hero-text {
+    order: 1;
+  }
+
+  .email-hero-image img {
+    border-radius: 18px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .email-btn {
+    width: 40%;
+  }
+
+  .email-hero h1 {
+    font-size: 2rem;
+  }
+
+  .email-services h2,
+  .email-benefits h2,
+  .email-process h2,
+  .email-tools h2,
+  .email-testimonials h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .service-card {
+    max-width: 300px;
+  }
+
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .email-hero-text h1 {
+    font-size: 1.75rem;
+  }
+}

@@ -1,0 +1,146 @@
+.navbar {
+  background-color: white !important;
+  z-index: 1050;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1vh 2vw;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.logo {
+  height: 8vw;
+  width: 8vw;
+  max-height: 80px;
+  max-width: 80px;
+  min-height: 40px;
+  min-width: 40px;
+  padding: 0.5vw;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.brandText {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  color: #1f9f9b;
+}
+
+.navLink {
+  font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+  color: #333 !important;
+  margin-right: 1.5vw;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1f9f9b; /* Your brand color */
+  transition: width 0.3s ease;
+}
+
+.navLink:hover {
+  color: #1f9f9b !important;
+}
+.navList {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 0.5vh 0;
+  margin-top: 0.5vh;
+  min-width: 40vw;
+  max-width: 250px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  z-index: 999;
+  border-radius: 0.25rem;
+}
+
+.dropdownItem {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.dropdownItem:hover,
+.dropdownItem:focus {
+  background-color: #008080 !important;
+  color: #fff !important;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px;
+  }
+
+  .navList {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1vh 2vw;
+  }
+
+  .dropdownMenu {
+    position: relative !important;
+    width: 100%;
+  }
+
+  .brand {
+    margin-bottom: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .logo {
+    height: 12vw;
+    width: 12vw;
+  }
+
+  .brandText {
+    font-size: clamp(0.9rem, 3.5vw, 1rem);
+  }
+
+  .navLink {
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    margin-right: 1vw;
+  }
+
+  .dropdownMenu {
+    min-width: 100%;
+  }
+
+  .navList {
+    padding: 1vh 2vw;
+  }
+
+  .dropdownMenu {
+    font-size: 0.95rem;
+  }
+}

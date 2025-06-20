@@ -1,0 +1,244 @@
+.poster-designing-container {
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 10vh;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.hero-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; /* Changed from center */
+  padding: 60px 5%;              /* Add consistent left/right padding */
+  gap: 60px;                     /* Increased gap for better separation */
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* Changed from center */
+  justify-content: center;
+  text-align: left;         /* Changed from center */
+  max-width: 600px;
+}
+
+
+.hero-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #004d4d;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  margin-top: 25px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  background-color: #004d4d;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Adjust image on right */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive: Stack text & image on smaller screens */
+@media (max-width: 768px) {
+  .hero-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-heading {
+    font-size: 2.2rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+
+/* Services Section */
+.services {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  width: 300px;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Process Section */
+.process {
+  background-color: rgb(232, 225, 185);
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 40px 0;
+}
+
+.process h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+  text-align: center;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.step {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step-number {
+  background-color: #06294f;
+  color: white;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Gallery Section */
+.gallery {
+
+  padding: 60px 20px;
+}
+
+.gallery-scroll {
+  max-width: 1000px;  /* Adjust width for desktop centering */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.gallery-img {
+  height: 350px;
+  width: 300px;
+  flex: 0 0 auto;
+  object-fit: cover;
+  scroll-snap-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Center horizontally and allow scroll only on small screens */
+@media (max-width: 768px) {
+  .gallery-scroll {
+    max-width: 100%;
+  }
+}
+
+
+.gallery-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Call to Action */
+.call-to-action {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff5e6;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .gallery-img {
+    width: 250px;
+    height: 300px;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+
