@@ -10,39 +10,39 @@ const Contact = () => {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+ const handleSubmit = (e) => {
+  e.preventDefault();
 
-    if (!name || !email || !subject || !message) {
-      alert("Please fill in all the fields.");
-      return;
-    }
+  if (!name || !email || !subject || !message) {
+    alert("Please fill in all the fields.");
+    return;
+  }
 
-    const serviceId = process.env.REACT_APP_SERVICE_ID;
-    const templateId = process.env.REACT_APP_TEMPLATE_ID;
-    const publicKey = process.env.REACT_APP_PUBLIC_KEY;
+  const serviceId = import.meta.env.VITE_SERVICE_ID;
+  const templateId = import.meta.env.VITE_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
-    const templateParams = {
-      name,
-      form_email: email,
-      form_subject: subject,
-      form_message: message,
-    };
-
-    emailjs.send(serviceId, templateId, templateParams, publicKey)
-      .then((response) => {
-        console.log("Email sent successfully", response);
-        alert("Your message has been sent successfully!");
-        setName('');
-        setEmail('');
-        setSubject('');
-        setMessage('');
-      })
-      .catch((error) => {
-        console.error("Error sending email:", error);
-        alert("Something went wrong. Please try again later.");
-      });
+  const templateParams = {
+    name,
+    form_email: email,
+    form_subject: subject,
+    form_message: message,
   };
+
+  emailjs.send(serviceId, templateId, templateParams, publicKey)
+    .then((response) => {
+      console.log("Email sent successfully", response);
+      alert("Your message has been sent successfully!");
+      setName('');
+      setEmail('');
+      setSubject('');
+      setMessage('');
+    })
+    .catch((error) => {
+      console.error("Error sending email:", error);
+      alert("Something went wrong. Please try again later.");
+    });
+};
 
   return (
     <>
