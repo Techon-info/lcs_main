@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import poster from "../assets/poster.jpeg";
-import event from "../assets/event.avif";
-import marketing2 from "../assets/marketing2.avif";
-import custom from "../assets/custom.avif";
+import poster1 from "../assets/poster1.jpg";
+import poster2 from "../assets/poster2.jpg";
+import poster3 from "../assets/poster3.jpg";
 
 
 const Posterdesign = () => {
@@ -89,9 +89,9 @@ const Posterdesign = () => {
           <h2 className={`${styles.textCenter} ${styles.mb4} text-center mb-4`}>Gallery</h2>
           <div className={`styles.dFlex d-flex justify-content-center`}>
             <div className={`${styles["gallery-scroll"]} ${styles.dFlex} ${styles.overflowAuto} ${styles.gap3} ${styles.px2} ${styles.ps3} gallery-scroll d-flex overflow-auto gap-3 px-2 ps-3` }>
-              <img src={event} alt="Event Promotion Poster" className={styles["gallery-img"]} />
-              <img src={marketing2} alt="Marketing Campaign Poster" className={styles["gallery-img"]} />
-              <img src={custom} alt="Custom Event Poster" className={styles["gallery-img"]} />
+              <img src={poster1} alt="Event Promotion Poster" className={styles["gallery-img"]} />
+              <img src={poster2} alt="Marketing Campaign Poster" className={styles["gallery-img"]} />
+              <img src={poster3} alt="Custom Event Poster" className={styles["gallery-img"]} />
             </div>
           </div>
         </div>
