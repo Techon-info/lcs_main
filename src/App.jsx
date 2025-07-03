@@ -13,14 +13,24 @@ import Scroll from './pages/Scroll';
 import Loader from './Loader';
 
 const App = () => {
-    const [isLoading, setIsLoading] = useState(true);
+   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate delay (e.g., loading assets)
-    const timer = setTimeout(() => {
+    const handleLoad = () => {
       setIsLoading(false);
-    }, 2000); // Show loader for 2 seconds
-    return () => clearTimeout(timer);
+    };
+
+    if (document.readyState === "complete") {
+      // Page already loaded
+      setIsLoading(false);
+    } else {
+      // Wait for full page load
+      window.addEventListener("load", handleLoad);
+    }
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
 
   if (isLoading) {
