@@ -10,7 +10,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXTwitter, faThreads } from "@fortawesome/free-brands-svg-icons";
+import { faXTwitter, faThreads,faLinkedin,faFacebookF,faInstagram,faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -58,20 +58,23 @@ const Footer = () => {
             </ul>
             <p className="mb-2">Follow us for latest updates</p>
             <div className={styles.socialIcons}>
-              <a href="https://wa.me/916369836057" target="_blank" rel="noopener noreferrer" aria-label="Whatsapp">
-                <FaWhatsapp />
+             <a href="https://wa.me/917604889478" target="_blank" rel="noopener noreferrer" aria-label="Whatsapp">
+                <FontAwesomeIcon icon={faWhatsapp} />
               </a>
-              <a href="https://www.facebook.com/share/16cECshpat/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <FaFacebookF />
+              <a href="https://www.facebook.com/LazenoConsultancy/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+               <FontAwesomeIcon icon={faFacebookF} />
               </a>
               <a href="https://www.instagram.com/_lcs_official?igsh=emkxdjFudTR4ODh6" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <FaInstagram />
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
               <a href="https://x.com/lcs_official_X?t=YJHZ8NS7XHgiCz8aagoBGA&s=09" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <FontAwesomeIcon icon={faXTwitter} />
               </a>
               <a href="https://www.threads.net/@_lcs_official" target="_blank" rel="noopener noreferrer" aria-label="Threads">
                 <FontAwesomeIcon icon={faThreads} />
+              </a>
+              <a href="https://www.linkedin.com/in/lazeno-consultancy-and-service-lcs-15a634361/" target="_blank" rel="noopener noreferrer" aria-label="Threads">
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </div>
           </div>
