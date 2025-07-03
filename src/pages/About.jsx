@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./About.module.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import client1 from "../assets/client1.jpg";
+import client2 from "../assets/client2.jpg";
 import { Carousel } from "react-bootstrap";
 import {
   FaPenNib, FaPaintBrush, FaSearch, FaUsers, FaVideo,
@@ -10,10 +12,16 @@ import {
 } from "react-icons/fa";
 
 const testimonials = [
-  {  name: "John Doe", feedback: "Their team provided exceptional service and support!" },
-  {  name: "Jane Smith", feedback: "Professional and creative solutions that boosted our brand." },
-  {  name: "Michael Brown", feedback: "Highly satisfied with the social media strategy delivered." },
-  { name: "Emily Davis", feedback: "Reliable, responsive, and results-driven team." },
+    {
+    image:client1,
+    name: "City Bags",
+    feedback: "Lazeno did an awesome job on our logo! Fast, affordable, and perfect results. Highly recommend!",
+  },
+  {
+    image: client2,
+    name: "Star Foods",
+    feedback: "Lazeno did great work for Star Food!  They designed eye-catching posters that made our food look amazing and brought us more customers. Easy to work with, delivered on time, and got real results. Highly recommend!",
+  },
 ];
 
 const services = [
@@ -140,6 +148,12 @@ const About = () => {
             <div className="col-lg-6 col-12 d-flex mb-3 mb-lg-0" key={i}>
               <div className={`p-4 text-start w-100 ${styles.testimonialBox}`}>
                 <div className="d-flex align-items-start">
+                  <img
+                        src={item.image}
+                        alt={item.name}
+                        className="img-fluid rounded shadow me-3"
+                        style={{ maxWidth: "120px", maxHeight: "120px", objectFit: "cover" }}
+                      />
                   <div>
                     <FaQuoteLeft className="text-success mb-2" size={24} />
                     <p className={styles.testimonialText}>{item.feedback}</p>
