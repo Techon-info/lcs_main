@@ -89,16 +89,6 @@ const VideoEditing = () => {
         </div>
       </section>
 
-      {/* Portfolio */}
-      <section className={styles["video-portfolio"]}>
-        <h2>Our Portfolio</h2>
-        <div className={styles["video-grid"]}>
-          <video src="/videos/sample1.mp4" controls></video>
-          <video src="/videos/sample2.mp4" controls></video>
-          <video src="/videos/sample3.mp4" controls></video>
-        </div>
-      </section>
-
       {/* Process Section */}
       <section className={`${styles["video-process"]} ${styles.container} ${styles["my-5"]}`}>
         <h2 className={`${styles["text-center"]} ${styles["mb-4"]}`}>Our Editing Process</h2>
