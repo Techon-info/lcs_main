@@ -11,7 +11,7 @@ import Navbar from '../components/Navbar';
 import carousel1 from '../assets/carousel1.avif';
 import carousel2 from '../assets/carousel2.avif';
 import carousel3 from '../assets/carousel3.avif';
-import founder from '../assets/founder.jpg'
+import founder from '../assets/founder_1.jpg'
 
 
 
