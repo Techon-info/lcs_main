@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center mt-4">
-          <p className="mb-0 small">&copy; {new Date().getFullYear()} Lazeno Consultancy Services. All rights reserved.</p>
+          <p className="mb-0 small">&copy; {new Date().getFullYear()} Lazeno Consultancy Services. All rights reserved. <br/><a href="https://www.instagram.com/mr_techon?igsh=ejF6NzNxdjVlMGY4">Design by Techon</a></p>
         </div>
       </div>
     </footer>
