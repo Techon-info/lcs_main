@@ -31,6 +31,7 @@ const Footer = () => {
               <li><Link to="/about">About</Link></li>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/ri">Your Career in LCS</Link></li>
             </ul>
           </div>
 
@@ -50,11 +51,16 @@ const Footer = () => {
             <h6 className={styles.footerSubtitle}>Services Quick Links</h6>
             <ul className={styles.footerLinks}>
               <li><Link to="/contentcreation">Content Creation</Link></li>
+              <li><Link to="/content-writing"> Content writing</Link></li>
               <li><Link to="/poster">Poster Designing</Link></li>
-              <li><Link to="/socialmedia">Social Media Management</Link></li>
-              <li><Link to="/seo">SEO Optimization</Link></li>
               <li><Link to="/video-editing">Video Editing</Link></li>
-              <li><Link to="/email-marketing">Email Marketing</Link></li>
+              <li><Link to="/video">Videography </Link></li>
+              <li><Link to="/media-marketing">Social Media Marketing </Link></li>
+              <li><Link to="/socialmedia">Social Media Management</Link></li>
+              <li><Link to="/search-marketing">Search Engine Marketing</Link></li>
+              <li><Link to="/seo">Search Engine Optimization </Link></li>
+              <li><Link to="/email-marketing">Email Marketing</Link></li>
+
             </ul>
             <p className="mb-2">Follow us for latest updates</p>
             <div className={styles.socialIcons}>
@@ -80,7 +86,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center mt-4">
-          <p className="mb-0 small">&copy; {new Date().getFullYear()} Lazeno Consultancy Services. All rights reserved. <br/><a href="https://www.instagram.com/mr_techon?igsh=ejF6NzNxdjVlMGY4">Design by Techon</a></p>
+          <p className="mb-0 small">&copy; {new Date().getFullYear()} Lazeno Consultancy Services. All rights reserved. <br/><a href="https://www.instagram.com/mr_techon?igsh=ejF6NzNxdjVlMGY4">Design by Techon</a>
+          </p>
         </div>
       </div>
     </footer>
