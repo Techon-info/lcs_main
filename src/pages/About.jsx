@@ -15,6 +15,8 @@ import {
   FaChartLine,
   FaQuoteLeft,
   FaBullseye,
+  FaShareAlt,
+  FaKeyboard,
   FaEye,
   FaHandshake,
   FaStar,
@@ -22,17 +24,18 @@ import {
   FaCogs,
 } from "react-icons/fa";
 
-
 const testimonials = [
-   {
-    image:client1,
+  {
+    image: client1,
     name: "City Bags",
-    feedback: "Lazeno did an awesome job on our logo! Fast, affordable, and perfect results. Highly recommend!",
+    feedback:
+      "Lazeno did an awesome job on our logo! Fast, affordable, and perfect results. Highly recommend!",
   },
   {
     image: client2,
     name: "Star Foods",
-    feedback: "Lazeno did great work for Star Food!  They designed eye-catching posters that made our food look amazing and brought us more customers. Easy to work with, delivered on time, and got real results. Highly recommend!",
+    feedback:
+      "Lazeno did great work for Star Food! They designed eye-catching posters that made our food look amazing and brought us more customers. Easy to work with, delivered on time, and got real results. Highly recommend!",
   },
 ];
 
@@ -50,7 +53,7 @@ const services = [
   },
   {
     icon: <FaSearch />,
-    title: "SEO Optimization",
+    title: "Search Engine Optimization",
     description: "Precision-tuned strategies to elevate search rankings.",
   },
   {
@@ -72,6 +75,31 @@ const services = [
     icon: <FaChartLine />,
     title: "Business Consultancy",
     description: "Smart strategies from ideation to execution.",
+  },
+  // Newly added services
+  {
+    icon: <FaShareAlt />,
+    title: "Social Media Marketing",
+    description:
+      "Data-driven campaigns that boost reach, engagement, and conversions across platforms.",
+  },
+  {
+    icon: <FaBullseye />,
+    title: "Search Engine Marketing",
+    description:
+      "ROI-focused paid search and display ads that capture high-intent audiences.",
+  },
+  {
+    icon: <FaKeyboard />,
+    title: "Content Writing",
+    description:
+      "Clear, persuasive copy for blogs, websites, and ads that drives action.",
+  },
+  {
+    icon: <FaVideo />,
+    title: "Videography",
+    description:
+      "End-to-end production — scripting, shooting, and lighting for cinematic stories.",
   },
 ];
 
@@ -104,6 +132,7 @@ const About = () => {
           </p>
         </section>
 
+        {/* Vision / Mission */}
         <div className="row text-center mb-5">
           <div className="col-md-6 mb-4">
             <div className={`p-4 shadow-sm ${styles.infoBox}`}>
@@ -127,6 +156,7 @@ const About = () => {
           </div>
         </div>
 
+        {/* Why Choose Us */}
         <section className="mb-5">
           <h3 className={`text-center mb-4 ${styles.sectionTitle}`}>
             Why Choose Lazeno?
@@ -160,12 +190,13 @@ const About = () => {
           </div>
         </section>
 
+        {/* Core Services */}
         <h3 className={`text-center mb-4 ${styles.sectionTitle}`}>
           Our Core Services
         </h3>
         <div className="container">
           <div className="row">
-            {services.slice(0, 4).map((service, index) => (
+            {services.map((service, index) => (
               <div
                 key={index}
                 className="col-12 col-sm-6 col-lg-3 mb-4 d-flex align-items-stretch"
@@ -180,29 +211,14 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div className="row justify-content-center">
-            {services.slice(4, 7).map((service, index) => (
-              <div
-                key={index}
-                className="col-12 col-sm-6 col-lg-4 mb-4 d-flex align-items-stretch"
-              >
-                <div
-                  className={`text-center shadow-sm p-4 w-100 ${styles.serviceCard}`}
-                >
-                  <div className={`${styles.iconBox} mb-3`}>{service.icon}</div>
-                  <h5 className={styles.cardTitle}>{service.title}</h5>
-                  <p className={styles.cardText}>{service.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
+        {/* Specializations */}
         <div className={`my-5 ${styles.specializations}`}>
           <h3 className={`text-center mb-4 ${styles.sectionTitle}`}>
             Our Specializations
           </h3>
-          <div className="row ">
+          <div className="row">
             <div className="col-md-4 mb-4">
               <div className={styles.specItem}>
                 Creative Strategy & Branding
@@ -225,30 +241,57 @@ const About = () => {
           </div>
         </div>
 
+        {/* Testimonials */}
         <div className={`text-center mt-5 container ${styles.testimonials}`}>
-          <h3 className={`mb-4 ${styles.sectionTitle}`}>What Our Clients Say</h3>
-          <Carousel 
-            interval={4000} 
+          <h3 className={`mb-4 ${styles.sectionTitle}`}>
+            What Our Clients Say
+          </h3>
+          <Carousel
+            interval={4000}
             indicators={true}
-            prevIcon={<span aria-hidden="true" className={`${styles.carouselControlPrev}`} />}
-            nextIcon={<span aria-hidden="true" className={`${styles.carouselControlNext}`} />}
+            prevIcon={
+              <span
+                aria-hidden="true"
+                className={`${styles.carouselControlPrev}`}
+              />
+            }
+            nextIcon={
+              <span
+                aria-hidden="true"
+                className={`${styles.carouselControlNext}`}
+              />
+            }
           >
             {testimonialChunks.map((group, idx) => (
               <Carousel.Item key={idx}>
                 <div className="row justify-content-center mx-0">
                   {group.map((item, i) => (
-                    <div className="col-lg-6 col-12 d-flex mb-3 mb-lg-0 px-2" key={i}>
-                      <div className={`p-4 text-start w-100 ${styles.testimonialBox}`}>
+                    <div
+                      className="col-lg-6 col-12 d-flex mb-3 mb-lg-0 px-2"
+                      key={i}
+                    >
+                      <div
+                        className={`p-4 text-start w-100 ${styles.testimonialBox}`}
+                      >
                         <div className="d-flex align-items-start">
                           <img
                             src={item.image}
                             alt={item.name}
                             className="img-fluid rounded shadow me-3"
-                            style={{ maxWidth: "120px", maxHeight: "120px", objectFit: "cover" }}
+                            style={{
+                              maxWidth: "120px",
+                              maxHeight: "120px",
+                              objectFit: "cover",
+                            }}
                           />
                           <div>
-                            <FaQuoteLeft className="text-success mb-2" size={24} />
-                            <p className={styles.testimonialText}>{item.feedback}</p>
+                            <FaQuoteLeft
+                              className="text-success mb-2"
+                              size={24}
+                            />
+                            <p className={styles.testimonialText}>
+                              {item.feedback}
+                            </p>
                             <p className="fw-bold mb-0">- {item.name}</p>
                           </div>
                         </div>
@@ -261,7 +304,6 @@ const About = () => {
           </Carousel>
         </div>
       </div>
-
       <Footer />
     </>
   );
