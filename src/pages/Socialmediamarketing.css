@@ -1,0 +1,172 @@
+/* =========================
+   General Container
+========================= */
+.content-creation-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #008080;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.cta-button {
+  background: #008080;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background: #006666;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   Strategy Carousel
+========================= */
+.strategy-carousel-section {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  border-radius: 12px;
+}
+
+.carousel-slide {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.strategy-icon {
+  font-size: 2.5rem;
+  color: #008080;
+}
+
+/* =========================
+   Core Services Section
+========================= */
+.content {
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+.sections {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  position: relative;
+}
+
+.sections::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #008080;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.contentcards {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  cursor: pointer;
+}
+
+.contentcards:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.iconwrappers {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  background: linear-gradient(135deg, #008080, #00c3c3);
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contentcards h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.contentcards p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* =========================
+   Why Choose Us
+========================= */
+.content-values-section {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 60px 20px;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+@media (max-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .sections {
+    font-size: 1.6rem;
+  }
+
+ 
+}

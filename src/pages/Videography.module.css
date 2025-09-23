@@ -1,0 +1,167 @@
+/* ===== General Layout ===== */
+.content-creation-container {
+  padding: 2rem 1rem;
+  background-color: #fdfdfd;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Hero Section ===== */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem 2rem;
+  margin-top: 80px; /* ✅ pushes content below navbar */
+}
+
+
+.hero-text h1 {
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+.hero-image img {
+  width: 100%;
+  max-width: 500px; /* compress size */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: block;
+  margin: 0 auto; /* centers the image */
+}
+
+
+/* CTA Button */
+.cta-button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #006666;
+  transform: translateY(-2px);
+}
+
+/* ===== Carousel Section ===== */
+.strategy-carousel-section {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+}
+
+.carousel-slide {
+  padding: 2rem;
+  background: #fafafa;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.strategy-icon {
+  font-size: 2.5rem;
+  color: #008080;
+}
+
+/* ===== Content Types (Cards) ===== */
+.content-types {
+  background: #f9f9f9;
+  padding: 4rem 2rem;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #1c1c1c;
+}
+
+.content-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+  font-size: 2rem;
+  color: #008080;
+  margin-bottom: 1rem;
+}
+
+/* ===== Values Section ===== */
+.content-values-section {
+  background: #ffffff;
+}
+
+.content-values-section h2 {
+  font-size: 2rem;
+}
+
+.content-values-section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ===== CTA Section ===== */
+.content-cta {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #008080, #00b3b3);
+  color: #fff;
+  border-radius: 16px;
+  margin: 3rem auto;
+  max-width: 900px;
+}
+
+.content-cta h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.content-cta p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+
+}
+@media (max-width: 768px) {
+  .hero-image img {
+    max-width: 100%; /* allow full width on small screens */
+  }
+}
+
+
+@media (max-width: 576px) {
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+}
