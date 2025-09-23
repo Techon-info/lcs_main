@@ -9,7 +9,7 @@ import {
   FaUserTie,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import management from "../assets/management.jpeg";
+import management from "../assets/SOCIAL_MEDIA_management.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
