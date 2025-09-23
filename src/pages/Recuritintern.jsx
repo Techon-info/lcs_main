@@ -12,7 +12,7 @@ const InternshipPage = () => {
 
       {/* Hero Section */}
       <section
-        className={styles.hero}gi
+        className={styles.hero}
         style={{ backgroundImage: `url(${internshipImg})` }}
       >
         <div className={styles.heroOverlay}>
@@ -78,4 +78,5 @@ const InternshipPage = () => {
 };
 
 export default InternshipPage;
+
 
