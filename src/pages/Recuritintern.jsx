@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Recuritintern.module.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import internshipImg from "../assets/banner.svg";
+import internshipImg from "../assets/website_banner.png";
 import { FaEnvelope } from "react-icons/fa";
 
 const InternshipPage = () => {
@@ -78,3 +78,4 @@ const InternshipPage = () => {
 };
 
 export default InternshipPage;
+
