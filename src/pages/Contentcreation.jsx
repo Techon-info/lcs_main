@@ -12,7 +12,7 @@ import {
   FaVideo,
   FaBookOpen
 } from "react-icons/fa";
-import content from '../assets/content.jpeg';
+import content from '../assets/strategy.jpg';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
