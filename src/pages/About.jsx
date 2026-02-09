@@ -42,7 +42,7 @@ const testimonials = [
 const services = [
   {
     icon: <FaPenNib />,
-    title: "Content Creation",
+    title: "Consulting",
     description:
       "Tailored content that informs, inspires, and converts — your voice, amplified.",
   },
