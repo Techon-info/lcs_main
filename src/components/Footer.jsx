@@ -50,7 +50,7 @@ const Footer = () => {
           <div className="col-md-4">
             <h6 className={styles.footerSubtitle}>Services Quick Links</h6>
             <ul className={styles.footerLinks}>
-              <li><Link to="/contentcreation">Content Creation</Link></li>
+              <li><Link to="/contentcreation">Consulting</Link></li>
               <li><Link to="/content-writing"> Content writing</Link></li>
               <li><Link to="/poster">Poster Designing</Link></li>
               <li><Link to="/video-editing">Video Editing</Link></li>
