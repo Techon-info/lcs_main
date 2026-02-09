@@ -84,7 +84,7 @@ const Navbar = () => {
             {isServicesOpen && (
               <ul className={`dropdown-menu show ${styles.dropdownMenu}`}>
                 {[
-                  { label: "Content Creation", path: "/contentcreation" },
+                  { label: "Consulting ", path: "/contentcreation" },
                   { label: "Content Writing", path: "/content-writing" },
                   { label: "Poster Designing", path: "/poster" },
                   { label: "Video Editing", path: "/video-editing" },
