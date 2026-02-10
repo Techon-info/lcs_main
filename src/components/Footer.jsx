@@ -85,10 +85,19 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-center mt-4">
-          <p className="mb-0 small">&copy; {new Date().getFullYear()} Lazeno Consultancy Services. All rights reserved. <br/><a href="https://www.instagram.com/mr_techon?igsh=ejF6NzNxdjVlMGY4">Design by Techon</a>
-          </p>
-        </div>
+      <div className={`${styles.udyamBox} text-center mt-4`}>
+  <span className={styles.udyamNumber}> UDYAM-TN-03-0271373</span>
+</div>
+
+<div className="text-center mt-3">
+  <p className="mb-0 small">
+    &copy; {new Date().getFullYear()} Lazeno Consultancy Services. All rights reserved.
+    <br/>
+    <a href="https://www.instagram.com/mr_techon?igsh=ejF6NzNxdjVlMGY4">
+      Design by Techon
+    </a>
+  </p>
+</div>
       </div>
     </footer>
   );
